@@ -1,0 +1,164 @@
+1. HTML (index.html)
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H&Co Agency | Communication Marketing & Gestion d’Événements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>H&Co Agency</h1>
+        <p>Votre partenaire en communication marketing et gestion d'événements</p>
+    </header>
+    
+    <nav>
+        <a href="#about">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Transformons vos idées en réalité</h1>
+        <p>Des stratégies innovantes aux événements inoubliables</p>
+    </div>
+
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Chez H&Co Agency, nous sommes dédiés à vous aider à atteindre vos objectifs grâce à des stratégies créatives et une exécution impeccable. Notre équipe passionnée combine expertise et innovation pour offrir des solutions personnalisées qui font réellement la différence.</p>
+    </section>
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Communication Marketing</h3>
+                <p>Création de campagnes stratégiques pour renforcer votre marque et attirer votre public cible.</p>
+            </div>
+            <div class="service">
+                <h3>Gestion d'Événements</h3>
+                <p>Organisation d’événements inoubliables, personnalisés selon vos besoins et objectifs.</p>
+            </div>
+            <div class="service">
+                <h3>Stratégie de Contenu</h3>
+                <p>Conception de contenus captivants qui résonnent avec votre audience et renforcent votre message.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Pour discuter de vos besoins ou en savoir plus sur nos services, contactez-nous :</p>
+        <p><strong>Email :</strong> <a href="mailto:contact@hcoagency.com">contact@hcoagency.com</a></p>
+        <p><strong>Téléphone :</strong> +224 62 00 00 00</p>
+        <p><strong>Site Web :</strong> <a href="https://www.hcoagency.com">www.hcoagency.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 H&Co Agency. Tous droits réservés. <a href="#">Mentions légales</a></p>
+    </footer>
+</body>
+</html>
+
+2. CSS (styles.css)
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Services section styles */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
